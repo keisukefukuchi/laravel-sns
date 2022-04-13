@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Article extends Model
 {
-    protected $filable = [
+    protected $fillable = [
         'title',
         'body'
     ];
