@@ -41,7 +41,7 @@ class ArticlePolicy
      */
     public function create(User $user)
     {
-        //
+        return true;
     }
 
     /**
@@ -67,28 +67,5 @@ class ArticlePolicy
     {
         return $user->id === $article->user_id;
     }
-
-    /**
-     * Determine whether the user can restore the article.
-     *
-     * @param  \App\User  $user
-     * @param  \App\Article  $article
-     * @return mixed
-     */
-    public function restore(User $user, Article $article)
-    {
-        //
-    }
-
-    /**
-     * Determine whether the user can permanently delete the article.
-     *
-     * @param  \App\User  $user
-     * @param  \App\Article  $article
-     * @return mixed
-     */
-    public function forceDelete(User $user, Article $article)
-    {
-        //
-    }
+    // 略
 }
